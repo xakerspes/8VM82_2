@@ -1,0 +1,27 @@
+<div class="form-group">
+	<title>8ВМ82 Бокижонов А.К.</title>
+<h3>Программа X + Y </h3>
+<label for="inp_1">Задача:&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</label>
+<script>
+	 var random_1 =Math.floor(Math.random() * 100) + 1;
+	 var random_2 =Math.floor(Math.random() * 100) + 1;
+	 var sum = random_1 + random_2;
+
+document.write(  '&nbsp; &nbsp;&nbsp; ' + random_1 +  ' + ' + random_2)</script>
+<p>
+<label for="inp_2">Ваш ответ:</label>
+
+  <input type="text" class="form-control" id="inp_1">
+</div>	
+
+<button onclick="multi()"  class="btn btn-primary" >Умножить</button>
+<script>
+function multi(){
+	if (document.getElementById('inp_1').value == sum) {
+		alert(document.getElementById('inp_1').value + '     Ваш ответ правыльно');
+	} else {
+		alert(document.getElementById('inp_1').value + '     Ваш ответ неправыльно' + ' Ответ: ' + this.random_1 + ' + ' + this.random_2 + ' = ' + this.sum );
+	}
+ 
+}
+</script>
